@@ -100,4 +100,4 @@ In order to run the demo file and reproduce the figures, you will need to:
   ## Reproduce figures from the paper
   
   To do so, you need to run the ```main.m``` file. Here, a menu is available and allows you to choose which figure or table you want to generate. Each number in the table below corresponds to a set of figures.
-  ## Reproduce figures from the paper
+
