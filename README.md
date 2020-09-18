@@ -26,8 +26,17 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
 
 ## Content
 
+ - demo.m: demo file with minimal requirements 
+ - /demos : contains demo files that produce tables and figures (including ```main.m```
+ - /data : contains data for synthetic examples (Section VI.D)
+
+ - /figures : where the tables and figures are saved
+ - /images : contains illustrative figures for this ```README.md```
+ - /src : contains helpful files to run the demos
+
 ## Minimal requirements
 
+In order to run the demo file and reproduce the figures, you will need to:
 - Download and install Tensorlab 3.0: https://www.tensorlab.net
 
 ## Demo file
