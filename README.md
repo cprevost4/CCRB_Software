@@ -74,3 +74,5 @@ In order to run the demo file and reproduce the figures, you will need to:
   We plot the bounds and total MSEs as a function of the noise on the first tensor (HSI).
   
   <img src="images/results.jpg?raw=true"/>
+  
+  ## Reproduce figures from the paper
