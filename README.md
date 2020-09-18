@@ -48,3 +48,16 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
  for the following parameters:
  
  ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%7B%5Cwidetilde%7B%5Cmathbf%7B%5Ctheta%7D%7D%7D%5E%7BT%7D%20%26%3D%20%5Cbegin%7Bbmatrix%7D%5Ctext%7Bvec%7D%28%7B%28%5Cmathbf%7BA%7D_2%29_%7B2%3AI%2C%3A%7D%7D%29%5E%7BT%7D%20%26%20%5Ctext%7Bvec%7D%28%7B%28%5Cmathbf%7BB%7D_2%29_%7B2%3AJ%2C%3A%7D%7D%29%5E%7BT%7D%20%26%20%5Ctext%7Bvec%7D%28%5Cmathbf%7BC%7D_1%29%5E%7BT%7D%5Cend%7Bbmatrix%7D%2C%20%5C%5C%20%7B%5Cwidetilde%7B%5Cmathbf%7B%5Cphi%7D%7D%7D%5E%7BT%7D%20%26%3D%20%5Cbegin%7Bbmatrix%7D%5Ctext%7Bvec%7D%28%7B%28%5Cmathbf%7BA%7D_1%29_%7B2%3AI_H%2C%3A%7D%7D%29%5E%7BT%7D%20%26%20%5Ctext%7Bvec%7D%28%7B%28%5Cmathbf%7BB%7D_1%29_%7B2%3AJ_H%2C%3A%7D%7D%29%5E%7BT%7D%20%26%20%5Ctext%7Bvec%7D%28%5Cmathbf%7BC%7D_2%29%5E%7BT%7D%5Cend%7Bbmatrix%7D.%20%5Cend%7Balign*%7D)
+ 
+  ### Run the algorithms
+  
+  We run the following algorithms:
+  - Uncoupled ALS;
+  - STEREO;
+  - Blind-STEREO;
+  
+  on our model.
+  The number of realizations, as well as the maximum number of iterations, can be user-specified in the ```Pre-allocation``` section of the file.
+  We compute the MSE provided by each algorithm and compare it to the bounds.
+
+  ### Display the results 
