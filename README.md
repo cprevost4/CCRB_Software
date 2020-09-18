@@ -9,6 +9,7 @@ Incoming
 ```
 
 ## Acknowledgements
+
 Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. If you want to use this software for publication, please cite the following paper:
 ```
 @article{kanatsoulis2018hyperspectral,
@@ -26,4 +27,9 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
 ## Content
 
 ## Minimal requirements
+
 - Download and install Tensorlab 3.0: https://www.tensorlab.net
+
+## Demo file
+ 
+ A demo with minimal requirements is available. To proceed, please run the ```demo.m``` file.
