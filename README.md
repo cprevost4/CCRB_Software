@@ -10,7 +10,19 @@ Incoming
 
 ## Acknowledgements
 
-Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. If you want to use this software for publication, please cite the following paper:
+Uncoupled ALS algorithm is courtesy of R. Bro.
+Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. If you want to use this software for publication, please cite the following papers:
+```
+@inproceedings{bro1998multi,
+  title={Multi-way analysis in the food industry-models, algorithms, and applications},
+  author={Bro, Rasmus},
+  booktitle={MRI, EPG and EMA,” Proc ICSLP 2000},
+  year={1998},
+  organization={Citeseer}
+}
+```
+
+
 ```
 @article{kanatsoulis2018hyperspectral,
   title={Hyperspectral super-resolution: A coupled tensor factorization approach},
