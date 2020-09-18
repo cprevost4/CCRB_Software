@@ -33,3 +33,5 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
 ## Demo file
  
  A demo with minimal requirements is available. To proceed, please run the ```demo.m``` file.
+ 
+ - <img src="https://latex.codecogs.com/gif.latex?s=\text { sensor reading }  " /> 
