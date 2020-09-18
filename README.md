@@ -34,7 +34,6 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
 }
 ```
 
-
 ```
 @article{kanatsoulis2018hyperspectral,
   title={Hyperspectral super-resolution: A coupled tensor factorization approach},
@@ -52,9 +51,8 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
 
  - demo.m: demo file with minimal requirements 
  - /demos : contains demo files that produce tables and figures (including ```main.m```
- - /data : contains data for synthetic examples (Section VI.D)
 
- - /figures : where the tables and figures are saved
+ - /figures : where the figures are saved
  - /images : contains illustrative figures for this ```README.md```
  - /src : contains helpful files to run the demos
 
@@ -99,4 +97,7 @@ In order to run the demo file and reproduce the figures, you will need to:
   
   <img src="images/results.jpg?raw=true"/>
   
+  ## Reproduce figures from the paper
+  
+  To do so, you need to run the ```main.m``` file. Here, a menu is available and allows you to choose which figure or table you want to generate. Each number in the table below corresponds to a set of figures.
   ## Reproduce figures from the paper
