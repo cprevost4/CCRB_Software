@@ -1,4 +1,4 @@
-# Software for Constrained Cramér-Rao bounds for hyperspectral super-resolution
+# Software for Constrained Cramér-Rao bounds with application to hyperspectral super-resolution
 
 Copyright (c) 2019 Clémence Prévost, Konstantin Usevich, Martin Haardt, Pierre Comon, David Brie <br>
 Contact: ```clemence.prevost@univ-lorraine.fr```
