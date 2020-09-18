@@ -36,4 +36,4 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
  
 ### Generate the model
  
- ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bequation%7D%20%5Cbegin%7Bcases%7D%20%7B%5Cmathcal%7BY%7D%7D_1%20%26%3D%20%5B%5C%21%5B%5Cmathbf%7BA%7D_1%2C%5Cmathbf%7BB%7D_1%2C%5Cmathbf%7BC%7D_1%5D%5C%21%5D%20&plus;%20%5Cmathcal%7BE%7D_1%2C%5C%5C%20%7B%5Cmathcal%7BY%7D%7D_2%20%26%3D%20%5B%5C%21%5B%5Cmathbf%7BA%7D_2%2C%5Cmathbf%7BB%7D_2%2C%5Cmathbf%7BC%7D_2%5D%5C%21%5D%20&plus;%20%5Cmathcal%7BE%7D_2%2C%5C%5C%20%5Cend%7Bcases%7D%20%5Cend%7Bequation%7D)
+ ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Cbegin%7Bcases%7D%20%7B%5Cmathcal%7BY%7D%7D_1%20%26%3D%20%5B%5C%21%5B%5Cmathbf%7BA%7D_1%2C%5Cmathbf%7BB%7D_1%2C%5Cmathbf%7BC%7D_1%5D%5C%21%5D%20&plus;%20%5Cmathcal%7BE%7D_1%2C%5C%5C%20%7B%5Cmathcal%7BY%7D%7D_2%20%26%3D%20%5B%5C%21%5B%5Cmathbf%7BA%7D_2%2C%5Cmathbf%7BB%7D_2%2C%5Cmathbf%7BC%7D_2%5D%5C%21%5D%20&plus;%20%5Cmathcal%7BE%7D_2%2C%5C%5C%20%5Cend%7Bcases%7D%20%5Cend%7Balign*%7D)
