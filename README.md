@@ -1,9 +1,21 @@
 # Software for Constrained Cramér-Rao bounds with application to hyperspectral super-resolution
 
-Copyright (c) 2019 Clémence Prévost, Konstantin Usevich, Martin Haardt, Pierre Comon, David Brie <br>
+Copyright (c) 2020 Clémence Prévost, Konstantin Usevich, Martin Haardt, Pierre Comon, David Brie <br>
 Contact: ```clemence.prevost@univ-lorraine.fr```
 
-This MATLAB software reproduces the results from the following article:
+This MATLAB software reproduces the results from the following papers:
+
+```
+@inproceedings{prevost2019performance,
+  title={Performance bounds for coupled CP model in the framework of hyperspectral super-resolution},
+  author={Prevost, Cl{\'e}mence and Usevich, Konstantin and Comon, Pierre and Haardt, Martin and Brie, David},
+  booktitle={2019 IEEE 8th International Workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP)},
+  pages={201--205},
+  year={2019},
+  organization={IEEE}
+}
+```
+
 ```
 Incoming
 ```
