@@ -9,7 +9,7 @@ Incoming
 ```
 
 ## Acknowledgements
-Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. If you want to use this software for publication, please cite
+Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. If you want to use this software for publication, please cite the following paper:
 ```
 @article{kanatsoulis2018hyperspectral,
   title={Hyperspectral super-resolution: A coupled tensor factorization approach},
