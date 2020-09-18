@@ -61,3 +61,7 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
   We compute the MSE provided by each algorithm and compare it to the bounds.
 
   ### Display the results 
+  
+  We plot the bounds and total MSEs as a function of the noise on the first tensor (HSI).
+  
+  <img src="images/results.jpg?raw=true"/>
