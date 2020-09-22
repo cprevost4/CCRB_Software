@@ -49,7 +49,8 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
 
 ## Content
 
- - demo.m: demo file with minimal requirements 
+ - demo.m : demo file with minimal requirements 
+ -/data : contains simulations results, for speed purpose. These results can also be obtained in the demo file.
  - /demos : contains demo files that produce tables and figures (including ```main.m```
 
  - /figures : where the figures are saved
