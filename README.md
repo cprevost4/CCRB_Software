@@ -106,3 +106,14 @@ In order to run the demo file and reproduce the figures, you will need to:
   
   To do so, you need to run the ```main.m``` file. Here, a menu is available and allows you to choose which figure or table you want to generate. Each number in the table below corresponds to a set of figures.
 
+| Number | Content                                        |
+|--------|------------------------------------------------|
+| 1      | produces Figure 1 from CAMSAP paper            |
+| 2      | produces Fig. 1 and 3 from preprint            |
+| 3      | produces Fig. 2 and 4 from preprint            |
+| 4      | produces Fig. 6 and 7 from preprint            |
+| 5      | produces Fig. 9 and 10 from preprint           |
+| 6      | produces Fig. 11 and 12 from preprint          |
+| 7      | produces Fig. 16, 18 or 20 from preprint       |
+| 8      | produces Fig. 15, 17 or 19 from preprint       |
+
