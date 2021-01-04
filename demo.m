@@ -11,9 +11,9 @@ dim1 = [6,6,16]; dim2 = [18,18,8]; F = 3;
 %Noise level
 SNR1 = 5:5:60; 
 for s=1:length(SNR1)
-    sigma_n1(s) = F*10^(-SNR1(s)/10);
+    sigma_n1(s) = 10^(-SNR1(s)/10);
 end
-SNR2 = 20; sigma_n2 = F*10^(-SNR2/10);
+SNR2 = 20; sigma_n2 = 10^(-SNR2/10);
 
 %Generate degradation matrices
 q = 3; phi = gauss_kernel(q);
@@ -34,6 +34,7 @@ C2 = Pm*C1*diag(1./(alpha.*beta));
 
 %Groundtruth tensors
 X1 = cpdgen({A1,B1,C1}); X2 = cpdgen({A2,B2,C2});
+Y = cpdgen({A2,B2,C1});
 
 %% Uncoupled CRB
 
@@ -103,7 +104,7 @@ end
 %% Pre-allocation (for speed purposes)
 
 %Specify the values for simulations
-Nreal = 200; Ninit = 10; Niter_c = 5000; Niter = 1000;
+Nreal = 100; Ninit = 10; Niter_c = 5000; Niter = 1000;
 
 %Pre-allocation for MSE
 se_C1 = zeros(dim1(3)*F,Nreal,length(SNR1));
@@ -213,7 +214,7 @@ for s=1:length(sigma_n1)
               tmp3(:,i) = C2_u(:,ind(i));
         end
         A2_u = tmp; B2_u = tmp2; C2_u = tmp3;
-        Y_hat_u = cpdgen({A2_u(2:end,:),B2_u(2:end,:),C1_u});
+        Y_hat_u = cpdgen({A2_u,B2_u,C1_u});
         
         %-----------------------
            
@@ -236,6 +237,8 @@ for s=1:length(sigma_n1)
         A1_c = A1_c.*repmat(1./A1_c(1,:),dim1(1),1);
         B1_c = B1_c.*repmat(1./B1_c(1,:),dim1(2),1);
         
+        Y_hat_c = cpdgen({A2_c,B2_c,C1_c});
+        
         %-----------------------
 
         %Correct ambiguity - Blind-STEREO
@@ -257,6 +260,7 @@ for s=1:length(sigma_n1)
         A2_b = tmp; B2_b = tmp2;
         C2_b = tmp4;
         
+        Y_hat_b = cpdgen({A2_b,B2_b,C1_b});
         %-----------------------
         
         %Squared errors
@@ -280,6 +284,10 @@ for s=1:length(sigma_n1)
         se_C2_b(:,n,s) = (C2(:)-C2_b(:)).^2;
         err = [A1(2:end,:) - A1_b(2:end,:) B1(2:end,:) - B1_b(2:end,:)];
         se_AB1_b(:,n,s) = (err(:)).^2; 
+        
+        se_Y_u(:,n,s) = (Y(:)-Y_hat_u(:)).^2;
+        se_Y_c(:,n,s) = (Y(:)-Y_hat_c(:)).^2;
+        se_Y_b(:,n,s) = (Y(:)-Y_hat_b(:)).^2;
 
     end  
     
@@ -305,6 +313,10 @@ for s=1:length(sigma_n1)
     mse_psi2_c(s) = mse_AB1_c(s)+mse_C2_c(s);
     mse_psi1_b(s) = mse_AB2_b(s)+mse_C1_b(s);
     mse_psi2_b(s) = mse_AB1_b(s)+mse_C2_b(s);
+    
+    mse_Y_u(s) = sum(mean(se_Y_u(:,:,s),2));
+    mse_Y_c(s) = sum(mean(se_Y_c(:,:,s),2));
+    mse_Y_b(s) = sum(mean(se_Y_b(:,:,s),2));
 
 end
 
@@ -336,3 +348,6 @@ xlabel('SNR on $\mathcal{Y}_1$','Interpreter','latex')
 set(gca,'FontName','Times','FontSize',16)
 legend('Uncoupled CRB','MSE - Uncoupled ALS', 'Fully-coupled CCRB', 'MSE - STEREO', 'Blind-CCRB', 'MSE - Blind-STEREO')
 xlim([5 60])
+
+
+

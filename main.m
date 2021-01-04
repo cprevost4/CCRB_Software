@@ -37,19 +37,21 @@
 % and figures produced will be stored in the figures folder.
 %
 % 1:  produces Figure 1 from (1) 
-% 2:  produces Fig. 1 and 3 from (2) 
-% 3:  produces Fig. 2 and 4 from (2) 
-% 4:  produces Fig. 6 and 7 from (2) 
-% 5:  produces Fig. 9 and 10 from (2)
-% 6:  produces Fig. 11 and 12 from (2)
-% 7:  produces Fig. 16, 18 or 20 from (2) 
-% 8:  produces Fig. 15, 17 or 19 from (2) 
+% 2:  produces Fig. 1 and 4 from (2) 
+% 3:  produces Fig. 2 and 5 from (2) 
+% 4:  produces Fig. 3 from (2) 
+% 5:  produces Fig. 6 from (2) 
+% 6:  produces Fig. 8, 9 and 10 from (2)
+% 7:  produces Fig. 11 and 12 from (2)
+% 8:  produces Fig. 13 and 14 from (2) 
+% 9:  produces Fig. 15 and 16 from (2) 
 
 %-------------------------------------------------------------------------%
 
 list_demos = ["camsap_paper" "scenario1_performance" "scenario2_performance" ...
-              "choice_rank" "influence_q" "influence_d" ...
-              "choice_lambda_scenario2" "choice_lambda_scenario1"
+              "choice_rank2" "performance_wrt_model" ...
+              "stereo_vs_adaptive_procedure" ...
+              "redo_q" "redo_d" "opti_qd"
     ];
 
 prompt = "Which file do you want to run ?";
