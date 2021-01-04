@@ -51,9 +51,9 @@ Coupled ALS algorithms STEREO and Blind-STEREO are courtesy of C. Kanatsoulis. I
 
  - demo.m : demo file with minimal requirements.
  
- - /data : contains simulations results, for speed purpose. These results can also be obtained in the demo file.
+ - /data : contains simulations results, for speed purpose. These results can also be obtained in the demo files.
  
- - /demos : contains demo files that produce tables and figures (including ```main.m```
+ - /demos : contains demo files that produce tables and figures (including ```main.m```)
 
  - /figures : where the figures are saved
  
@@ -109,11 +109,12 @@ In order to run the demo file and reproduce the figures, you will need to:
 | Number | Content                                        |
 |--------|------------------------------------------------|
 | 1      | produces Figure 1 from CAMSAP paper            |
-| 2      | produces Fig. 1 and 3 from preprint            |
-| 3      | produces Fig. 2 and 4 from preprint            |
-| 4      | produces Fig. 6 and 7 from preprint            |
-| 5      | produces Fig. 9 and 10 from preprint           |
-| 6      | produces Fig. 11 and 12 from preprint          |
-| 7      | produces Fig. 16, 18 or 20 from preprint       |
-| 8      | produces Fig. 15, 17 or 19 from preprint       |
+| 2      | produces Fig. 1 and 4 from preprint            |
+| 3      | produces Fig. 2 and 5 from preprint            |
+| 4      | produces Fig. 3 from preprint                  |
+| 5      | produces Fig. 6 from preprint                  |
+| 6      | produces Fig. 8, 9 and 10 from preprint        |
+| 7      | produces Fig. 11 and 12 from preprint          |
+| 8      | produces Fig. 13 and 14 from preprint          |
+| 9      | produces Fig. 15 and 16 from preprint          |
 
