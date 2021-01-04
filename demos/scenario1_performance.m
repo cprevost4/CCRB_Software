@@ -11,9 +11,9 @@ dim1 = [6,6,16]; dim2 = [18,18,8]; F = 3;
 %Noise on tensors
 SNR1 = 5:5:60; 
 for s=1:length(SNR1)
-    sigma_n1(s) = F*10^(-SNR1(s)/10);
+    sigma_n1(s) = 10^(-SNR1(s)/10);
 end
-SNR2 = 20; sigma_n2 = F*10^(-SNR2/10);
+SNR2 = 20; sigma_n2 = 10^(-SNR2/10);
  
 %Degradation matrices
 q = 3; phi = gauss_kernel(q); phi = phi/norm(phi);
@@ -121,12 +121,12 @@ set(gca,'FontName','Times','FontSize',14)
 subplot(1,2,2)
 semilogy(SNR1,CCRB_Y,'k--','Linewidth',1,'MarkerSize',8); hold on
 semilogy(SNR1,mse_Y_c,'bo','Linewidth',0.7,'MarkerSize',8); hold on
-title('Performance bounds for $\widetilde{\mathbf{\psi}}$','Interpreter','latex')
+title('Performance bounds for $\mathbf{x}$','Interpreter','latex')
 xlabel('SNR on $\mathcal{Y}_1$','Interpreter','latex')
 legend('$\textbf{CCRB}$','MSE - STEREO','Interpreter','latex')
 xlim([5 60])
 set(gca,'FontName','Times','FontSize',14)
-saveas(gcf,'figures/fig3.fig')
+saveas(gcf,'figures/fig4.fig')
 
 figure
 semilogy(SNR1,CCRB1_psi1+CCRB1_psi2,'k--','Linewidth',1,'MarkerSize',8); hold on

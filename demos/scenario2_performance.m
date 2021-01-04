@@ -11,9 +11,9 @@ dim1 = [6,6,16]; dim2 = [18,18,8]; F = 3;
 %Noise on tensors
 SNR1 = 5:5:60; 
 for s=1:length(SNR1)
-    sigma_n1(s) = F*10^(-SNR1(s)/10);
+    sigma_n1(s) = 10^(-SNR1(s)/10);
 end
-SNR2 = 20; sigma_n2 = F*10^(-SNR2/10);
+SNR2 = 20; sigma_n2 = 10^(-SNR2/10);
  
 %Degradation matrices
 q = 3; phi = gauss_kernel(q); phi = phi/norm(phi);
@@ -171,19 +171,19 @@ xlabel('SNR on $\mathcal{Y}_1$','Interpreter','latex')
 legend('$\textbf{CRB}$','MSE - Uncoupled ALS','$\textbf{CCRB}$','MSE - STEREO','$\textbf{Blind-CCRB}$','MSE - Blind-STEREO','Interpreter','latex')
 set(gca,'FontName','Times','FontSize',14)
 xlim([5 60])
-ylim([2e-4 2])
+%ylim([2e-4 2])
 subplot(1,2,2)
 semilogy(SNR1,CCRB_Y,'k--','Linewidth',1,'MarkerSize',8); hold on
-semilogy(SNR1,mse_Y_u,'r+','Linewidth',1,'MarkerSize',8); hold on
+%semilogy(SNR1,mse_Y_u,'r+','Linewidth',1,'MarkerSize',8); hold on
 semilogy(SNR1,CCRB_Y_b,'k:','Linewidth',2,'MarkerSize',8); hold on
 semilogy(SNR1,mse_Y_b,'gd','Linewidth',1,'MarkerSize',8); hold on
-semilogy(SNR1,CRB_Y,'k-','Linewidth',1,'MarkerSize',8); hold on
+%semilogy(SNR1,CRB_Y,'k-','Linewidth',1,'MarkerSize',8); hold on
 semilogy(SNR1,mse_Y_c,'bo','Linewidth',1,'MarkerSize',8)
-title('Performance bounds for $\widetilde{\mathbf{\psi}}$','Interpreter','latex')
+title('Performance bounds for $\mathbf{x}$','Interpreter','latex')
 xlabel('SNR on $\mathcal{Y}_1$','Interpreter','latex')
 set(gca,'FontName','Times','FontSize',14)
 xlim([5 60])
-saveas(gcf,'figures/fig4.fig')
+saveas(gcf,'figures/fig5.fig')
 
 
 figure
@@ -194,7 +194,7 @@ semilogy(SNR1,CCRB2_psi1+CCRB2_psi2,'k:','Linewidth',2,'MarkerSize',8); hold on
 semilogy(SNR1,CCRB3,'bo','Linewidth',0.7,'MarkerSize',8); hold on
 xlabel('SNR on $\mathcal{Y}_1$','Interpreter','latex')
 legend('$\textbf{CRB}$','$\textbf{CCRB}$','Reparametrized CRB','$\textbf{Blind-CCRB}$','Blind reparametrized CRB','Interpreter','latex')
-xlim([5 60]); ylim([5e-4,2])
+xlim([5 60]); %ylim([5e-4,2])
 set(gca,'FontName','Times','FontSize',14)
 saveas(gcf,'figures/fig2.fig')
 
